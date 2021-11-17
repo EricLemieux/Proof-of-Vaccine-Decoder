@@ -12,7 +12,7 @@ def invert_ord(s: str) -> str:
 
 raw_data = input()
 if raw_data is None:
-    print("Missing input data")
+    print("Missing input data", file=sys.stderr)
     exit(1)
 if not raw_data.startswith("shc:/"):
     print("Content is not a smart health card, unable to process", file=sys.stderr)
